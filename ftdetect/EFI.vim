@@ -1,6 +1,8 @@
 augroup filetype
   au ColorScheme,BufRead,BufNewFile *.uni setf uni
   au ColorScheme,BufRead,BufNewFile *.uni set syntax=c.uni.doxygen
+  au ColorScheme,BufRead,BufNewFile *.hfr setf hfr
+  au ColorScheme,BufRead,BufNewFile *.hfr set syntax=c.doxygen.hfr
   au ColorScheme,BufRead,BufNewFile *.vfr setf vfr
   au ColorScheme,BufRead,BufNewFile *.vfr set syntax=c.doxygen.vfr
   au ColorScheme,BufRead,BufNewFile *.Vfr setf vfr

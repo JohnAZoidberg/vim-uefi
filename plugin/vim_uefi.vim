@@ -86,6 +86,9 @@ function! s:UpdateCscope()
   :echohl Directory
   :echon "\rfind *.vfr files"
   call s:system ('find `pwd` ! -wholename "*tmp/*" -name "*.vfr"  >> cscope.files')
+  :echohl Directory
+  :echon "\rfind *.hfr files"
+  call s:system ('find `pwd` ! -wholename "*tmp/*" -name "*.hfr"  >> cscope.files')
   :echohl Special
   :echon "\rSorting cscope files..."
   call s:system ('sort -o cscope.filessort cscope.files')
